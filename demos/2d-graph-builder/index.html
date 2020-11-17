@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GraphBuilder</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="workPlace">
+              <div class="row">
+                <div class="col-md-10">
+                    <svg id="workPlace" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="90vh">
+                      <g class="body">
+                        <g class="edges"></g>
+                        <g class="points"></g>
+                        <g class="selectBox"></g>
+                      </g>
+
+                    </svg>
+                </div>
+                <div class="col-md-2">
+                    <span class="clearBtn  workPlace-btn flaticon-garbage">   </span>
+                    <span class="pointBtn  workPlace-btn flaticon-plus-button">       </span>
+                    <span class="fullEdgeBtn workPlace-btn flaticon-network"></span>
+                    <span class="lineEdgeBtn workPlace-btn flaticon-connections"></span>                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="sidebar">
+              <div class="row">
+                <div class="col-md-12">
+                    <h2>You Graph here</h2>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-10">
+                    
+                     <textarea class="textLog">
+                  
+                      </textarea>
+                  </div>
+                  <div class="col-md-2">    
+                    <span class="copyTextBtn flaticon-upload"></span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+  <script type="text/javascript" src="components/random.js"></script>
+  <script type="text/javascript" src="config/mainConfig.js"></script>
+  <script type="text/javascript" src="components/point.js"></script>
+  <script type="text/javascript" src="components/edge.js"></script>
+  <script type="text/javascript" src="components/graphParser.js"></script>
+  <script type="text/javascript" src="components/graph.js"></script>
+  <script type="text/javascript" src="components/ISelectContainer.js"></script>
+  <script type="text/javascript" src="components/SelectBox.js"></script>
+  <script type="text/javascript" src="components/workPlace.js"></script>
+  <script src="components/app.js"></script>
+  </body>
+</html>
